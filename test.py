@@ -46,7 +46,7 @@ torch.cuda.manual_seed(0)
 actor = Actor(state_dim, action_dim, net_width).to(device)
 
 # Load the pre-trained model weights for the Actor network
-actor.load_state_dict(torch.load("your model name"))
+actor.load_state_dict(torch.load("your model name")) # like "Pendulum-123.pt"
 
 # Switch the Actor network to evaluation mode (disables dropout, etc.)
 actor.eval()
